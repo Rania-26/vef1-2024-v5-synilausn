@@ -1,13 +1,13 @@
 {
   "name": "vef1-2024-v5-synilausn-main",
   "version": "1.0.0",
-  "description": "Sýnilausn á [verkefni 5](https://github.com/vefforritun/vef1-2024-v5) byggð á sýnilausn á [verkefni 4](https://github.com/vefforritun/vef1-2024-v4-synilausn).",
+  "description": "Sýnilausn á [verkefni 5](https://github.com/vefforritun/vef1-2024-v5) byggð á Sassy",
   "main": "index.js",
   "scripts": {
-    "dev": "browser-sync start --server --files 'css/*.css' 'index.html'",
     "sass": "sass --watch styles:css",
-    "lint": "stylelint '**/*.scss'",
-    "start": "concurrently \"npm run sass\" \"npm run dev\""
+    "serve": "browser-sync start --server --files 'css/*.css'",
+    "dev": "concurrently \"npm run sass\" \"npm run serve\"",
+    "lint": "stylelint '**/*.scss'"
   },
   "author": "",
   "license": "ISC",
